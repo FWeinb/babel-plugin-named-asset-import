@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:ci": "jest && codecov",
-    "prepublish": "babel -d dist ./*.js"
+    "test:ci": "jest && codecov"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
