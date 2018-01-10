@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`modules and js files should not be changed 1`] = `
+"
+import { url, other, key } from 'some-module';
+import { test } from './file.js';"
+`;
+
+exports[`should add import to webpack loaders 1`] = `
+"import ReactComponent from 'svg-react-loader!icon.svg';
+import url from 'url-loader!icon.svg';"
+`;
+
+exports[`should leave default import intact for now 1`] = `
+"
+import Test from 'icon.svg';"
+`;
+
+exports[`should retained renamed import 1`] = `"import Icon from 'svg-react-loader!icon.svg';"`;
