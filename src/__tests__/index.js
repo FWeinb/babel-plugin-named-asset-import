@@ -44,3 +44,13 @@ it('modules and js files should not be changed', () => {
     const { code } = transform(input, { plugins: [plugin] });
     expect(code).toMatchSnapshot();
 });
+
+
+it('should work for markdown and html', () => {
+    const input = `
+        import { html as docHtml, raw } from 'doc.md'
+        import { html as otherDocHtml, url } from 'otherDoc.html'
+    `
+    const { code } = transform(input, { plugins: [plugin] });
+    expect(code).toMatchSnapshot();
+});

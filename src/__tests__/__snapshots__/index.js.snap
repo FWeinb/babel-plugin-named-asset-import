@@ -17,3 +17,10 @@ import Test from 'icon.svg';"
 `;
 
 exports[`should retained renamed import 1`] = `"import Icon from 'svg-react-loader!icon.svg';"`;
+
+exports[`should work for markdown and html 1`] = `
+"import docHtml from 'html-loader!markdown-loader!doc.md';
+import raw from 'file-loader!doc.md';
+import otherDocHtml from 'html-loader!otherDoc.html';
+import url from 'url-loader!otherDoc.html';"
+`;

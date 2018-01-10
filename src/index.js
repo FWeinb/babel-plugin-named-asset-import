@@ -1,7 +1,7 @@
 import { extname } from 'path';
 import { wrapErrorWithCodeFrame, createErrorWithLoc } from 'babel-errors';
 
-const extensions = ['svg', 'md', 'html'];
+const extensions = ['png', 'svg', 'md', 'html'];
 const validExtension = ext => extensions.some(validExt => ext === validExt);
 
 const wasProcessed = path => path.node.source.value.indexOf('!') !== -1;
@@ -15,6 +15,12 @@ const defaultLoaders = {
 const assetLoaderMap = {
     svg: {
         ReactComponent: 'svg-react-loader'
+    },
+    md: {
+        html: 'html-loader!markdown-loader'
+    },
+    html: {
+        html: 'html-loader'
     }
 }
 
