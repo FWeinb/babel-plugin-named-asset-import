@@ -4,8 +4,7 @@
   "description": "Asset loading based on named import",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:ci": "jest && codecov"
+    "test": "jest"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -34,7 +33,7 @@
   "jest": {
     "collectCoverage": true,
     "coverageReporters": [
-      "json",
+      "lcov",
       "html"
     ]
   },
