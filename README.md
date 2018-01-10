@@ -21,3 +21,20 @@ import Icon from 'svg-react-loader!./icon.svg';"
 ```
 
 The webpack configuration of the various loaders is left to the user (e.g. create-react-app).
+
+## Edge Cases
+
+### Default Import 
+
+For now default imports will be left as is, this allows the user to configure it's own "default" behaviour. 
+`import Icon from './icon.svg';` will be left as is. 
+
+### Request of an unkown asset
+
+```js
+import { someUnkownAsset } from './icon.svg' 
+```
+
+Will currently result in a compile type error like this: 
+
+`SyntaxError: filename.js: Unkown asset requested, possible assets are: url, raw, ReactComponent`
