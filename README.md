@@ -3,7 +3,7 @@ babel-plugin-named-asset-import
 [![Codecov](https://img.shields.io/codecov/c/github/FWeinb/babel-plugin-named-asset-import.svg?style=flat-square)](https://codecov.io/gh/FWeinb/babel-plugin-named-asset-import)
 ====
 
-Proof of Concept for [facebookincubator/create-react-app#3722](https://github.com/facebookincubator/create-react-app/issues/3722) implemented as a bable-plugin. 
+Proof of Concept for [facebookincubator/create-react-app#3722](https://github.com/facebookincubator/create-react-app/issues/3722) implemented as a bable plugin. 
 
 This will translate this:
 ```js
@@ -26,7 +26,7 @@ The webpack configuration of the various loaders is left to the user (e.g. creat
 
 ### Default Import 
 
-For now default imports will be left as is, this allows the user to configure it's own "default" behaviour. 
+For now default imports will be left as is. This allows the user to configure its own "default" behaviour. 
 `import Icon from './icon.svg';` will be left as is. 
 
 ### Request of an unkown asset
@@ -35,6 +35,6 @@ For now default imports will be left as is, this allows the user to configure it
 import { someUnkownAsset } from './icon.svg' 
 ```
 
-Will currently result in a compile type error like this: 
+Will currently result in a compile time error like this: 
 
 `SyntaxError: filename.js: Unkown asset requested, possible assets are: url, raw, ReactComponent`
