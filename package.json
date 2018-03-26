@@ -2,6 +2,7 @@
   "name": "babel-plugin-named-asset-import",
   "version": "1.0.0",
   "description": "Asset loading based on named import",
+  "repository": "git@github.com:FWeinb/babel-plugin-named-asset-import.git",
   "main": "index.js",
   "scripts": {
     "test": "jest"
