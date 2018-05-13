@@ -3,6 +3,8 @@ babel-plugin-named-asset-import
 [![Codecov](https://img.shields.io/codecov/c/github/FWeinb/babel-plugin-named-asset-import.svg?style=flat-square)](https://codecov.io/gh/FWeinb/babel-plugin-named-asset-import)
 ====
 
+> :warning: This was just a proof of concept and is in no way meant to be used. Something similar was implemented into CRA in [this](https://github.com/facebook/create-react-app/pull/3718) PR. :warning:
+
 Proof of Concept for [facebookincubator/create-react-app#3722](https://github.com/facebookincubator/create-react-app/issues/3722) implemented as a bable plugin. 
 
 This will translate this:
